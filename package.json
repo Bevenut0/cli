@@ -1,0 +1,39 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "description": "CLI para criação de arquivos",
+  "license": "ISC",
+  "author": "Bevenuto",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tsx ./src/index.ts",
+    "start": "node ./dist/index.js",
+    "build": "tsc --build tsconfig.build.json",
+    "prettier": "prettier --write ./src/**/*.ts",
+    "eslint": "npx eslint ./src",
+    "test": "jest --no-cache --watch-all --coverage",
+    "test:ci": "jest --no-cache --coverage"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/inquirer": "^9.0.9",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.9.2",
+    "@types/shelljs": "^0.10.0",
+    "eslint": "^10.4.1",
+    "globals": "^17.6.0",
+    "jest": "^30.4.2",
+    "jiti": "^2.7.0",
+    "prettier": "^3.8.3",
+    "ts-jest": "^29.4.11",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.60.1"
+  },
+  "dependencies": {
+    "cfonts": "^3.3.1",
+    "inquirer": "^8.2.7",
+    "shelljs": "^0.10.0"
+  }
+}
